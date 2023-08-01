@@ -14,6 +14,14 @@ import org.apache.ibatis.annotations.Select;
 public interface DishMapper {
 
     /**
+     * 根据id动态修改菜品数据
+     *
+     * @param dish
+     */
+    @AutoFill(value = OperationType.UPDATE)
+    void update(Dish dish);
+
+    /**
      * 根据主键删除菜品数据
      *
      * @param id
