@@ -8,6 +8,6 @@ sky:
     password: 123456
   alioss:
     endpoint: oss-cn-shanghai.aliyuncs.com
-    access-key-id:
-    access-key-secret:
+    access-key-id: LTAI5tSYsLszPzz7zS1xpQrF
+    access-key-secret: tOqNRQSr4DTAhsIIyouE1vEojp0IOk
     bucket-name: sky-take-out-study-dj

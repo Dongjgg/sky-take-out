@@ -7,6 +7,13 @@ import java.util.List;
 
 @Mapper
 public interface SetmealDishMapper {
+
+    /**
+     * 批量保存套餐和菜品的关联关系
+     * @param setmealDishes
+     */
+    void insertBatch(List<SetmealDish> setmealDishes);
+
     /**
      * 根据菜品id查询对应的套餐id
      *

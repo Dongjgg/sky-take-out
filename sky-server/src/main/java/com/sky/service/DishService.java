@@ -11,6 +11,13 @@ import java.util.List;
 public interface DishService {
 
     /**
+     * 根据分类id查询菜品
+     * @param categoryId
+     * @return
+     */
+    List<Dish> list(Long categoryId);
+
+    /**
      * 根据id修改菜品基本信息和对应的口味信息
      *
      * @param dishDTO
