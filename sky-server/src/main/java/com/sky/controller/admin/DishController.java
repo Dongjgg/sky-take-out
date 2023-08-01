@@ -28,6 +28,20 @@ public class DishController {
     private DishService dishService;
 
     /**
+     * 菜品批量删除
+     *
+     * @param ids
+     * @return
+     */
+    @DeleteMapping
+    @ApiOperation("菜品批量删除")
+    public Result delete(@RequestParam List<Long> ids) {
+        log.info("菜品批量删除：{}", ids);
+        dishService.deleteBatch(ids);//后绪步骤实现
+        return Result.success();
+    }
+
+    /**
      * 菜品分页查询
      *
      * @param dishPageQueryDTO
