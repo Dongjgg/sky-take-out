@@ -8,6 +8,13 @@ import com.sky.vo.SetmealVO;
 public interface SetmealService {
 
     /**
+     * 套餐起售、停售
+     * @param status
+     * @param id
+     */
+    void startOrStop(Integer status, Long id);
+
+    /**
      * 根据id查询套餐和关联的菜品数据
      * @param id
      * @return

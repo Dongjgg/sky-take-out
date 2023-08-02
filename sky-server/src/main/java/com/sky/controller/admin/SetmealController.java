@@ -25,6 +25,19 @@ public class SetmealController {
     private SetmealService setmealService;
 
     /**
+     * 套餐起售停售
+     * @param status
+     * @param id
+     * @return
+     */
+    @PostMapping("/status/{status}")
+    @ApiOperation("套餐起售停售")
+    public Result startOrStop(@PathVariable Integer status, Long id) {
+        setmealService.startOrStop(status, id);
+        return Result.success();
+    }
+
+    /**
      * 根据id查询套餐，用于修改页面回显数据
      *
      * @param id
