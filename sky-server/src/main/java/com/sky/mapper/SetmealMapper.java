@@ -31,7 +31,12 @@ public interface SetmealMapper {
      * @param id
      * @return
      */
-    @Select("select count(id) from setmeal where category_id = #{categoryId}")
+    @Select("select count(id) from setmeal where category_id = #{id}")
     Integer countByCategoryId(Long id);
 
+    @Select("select * from setmeal where id = #{id}")
+    Setmeal getById(Long id);
+
+    @AutoFill(value = OperationType.UPDATE)
+    void update(Setmeal setmeal);
 }
