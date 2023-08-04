@@ -60,4 +60,6 @@ public interface DishService {
      * @param dishDTO
      */
     public void saveWithFlavor(DishDTO dishDTO);
+
+    void startOrStop(Integer status, Long id);
 }
