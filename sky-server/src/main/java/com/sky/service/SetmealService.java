@@ -57,4 +57,6 @@ public interface SetmealService {
      * @param setmealDTO
      */
     void saveWithDish(SetmealDTO setmealDTO);
+
+    void deleteBatch(List<Long> ids);
 }
