@@ -7,6 +7,11 @@ import java.util.List;
 public interface ShoppingCartService {
 
     /**
+     * 清空购物车商品
+     */
+    void cleanShoppingCart();
+
+    /**
      * 查看购物车
      * @return
      */
