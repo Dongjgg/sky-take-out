@@ -9,6 +9,13 @@ import com.sky.vo.OrderVO;
 public interface OrderService {
 
     /**
+     * 条件搜索订单
+     * @param ordersPageQueryDTO
+     * @return
+     */
+    PageResult conditionSearch(OrdersPageQueryDTO ordersPageQueryDTO);
+
+    /**
      * 再来一单
      *
      * @param id
