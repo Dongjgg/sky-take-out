@@ -28,6 +28,18 @@ public class OrderController {
     private OrderService orderService;
 
     /**
+     * 完成订单
+     *
+     * @return
+     */
+    @PutMapping("/complete/{id}")
+    @ApiOperation("完成订单")
+    public Result complete(@PathVariable("id") Long id) {
+        orderService.complete(id);
+        return Result.success();
+    }
+
+    /**
      * 派送订单
      *
      * @return
