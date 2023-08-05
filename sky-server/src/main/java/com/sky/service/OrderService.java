@@ -10,6 +10,20 @@ import com.sky.vo.OrderVO;
 public interface OrderService {
 
     /**
+     * 拒单
+     *
+     * @param ordersRejectionDTO
+     */
+    void rejection(OrdersRejectionDTO ordersRejectionDTO) throws Exception;
+
+    /**
+     * 接单
+     *
+     * @param ordersConfirmDTO
+     */
+    void confirm(OrdersConfirmDTO ordersConfirmDTO);
+
+    /**
      * 各个状态的订单数量统计
      * @return
      */
