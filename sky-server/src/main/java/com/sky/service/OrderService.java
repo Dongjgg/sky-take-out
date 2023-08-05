@@ -10,6 +10,13 @@ import com.sky.vo.OrderVO;
 public interface OrderService {
 
     /**
+     * 商家取消订单
+     *
+     * @param ordersCancelDTO
+     */
+    void cancel(OrdersCancelDTO ordersCancelDTO) throws Exception;
+
+    /**
      * 拒单
      *
      * @param ordersRejectionDTO
