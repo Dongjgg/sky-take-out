@@ -10,6 +10,13 @@ import com.sky.vo.OrderVO;
 public interface OrderService {
 
     /**
+     * 派送订单
+     *
+     * @param id
+     */
+    void delivery(Long id);
+
+    /**
      * 商家取消订单
      *
      * @param ordersCancelDTO
