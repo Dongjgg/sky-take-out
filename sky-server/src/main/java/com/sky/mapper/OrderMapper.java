@@ -10,6 +10,13 @@ import org.apache.ibatis.annotations.Select;
 public interface OrderMapper {
 
     /**
+     * 根据状态统计订单数量
+     * @param status
+     */
+    @Select("select count(id) from orders where status = #{status}")
+    Integer countStatus(Integer status);
+
+    /**
      * 根据id查询订单
      * @param id
      */
