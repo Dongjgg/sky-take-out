@@ -526,7 +526,7 @@ public class OrderServiceImpl implements OrderService {
         }
 
         //检查用户的收货地址是否超出配送范围
-        checkOutOfRange(addressBook.getCityName()+addressBook.getDistrictName()+addressBook.getDetail());
+//        checkOutOfRange(addressBook.getCityName()+addressBook.getDistrictName()+addressBook.getDetail());
 
         Long userId = BaseContext.getCurrentId();
         ShoppingCart shoppingCart = new ShoppingCart();
