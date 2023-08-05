@@ -10,6 +10,13 @@ import com.sky.vo.OrderVO;
 public interface OrderService {
 
     /**
+     * 接单
+     *
+     * @param ordersConfirmDTO
+     */
+    void confirm(OrdersConfirmDTO ordersConfirmDTO);
+
+    /**
      * 各个状态的订单数量统计
      * @return
      */
