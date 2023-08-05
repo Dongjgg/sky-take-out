@@ -9,6 +9,12 @@ import com.sky.vo.OrderVO;
 public interface OrderService {
 
     /**
+     * 用户取消订单
+     * @param id
+     */
+    void userCancelById(Long id) throws Exception;
+
+    /**
      * 查询订单详情
      * @param id
      * @return
