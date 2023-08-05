@@ -11,6 +11,13 @@ import java.util.List;
 public interface ShoppingCartMapper {
 
     /**
+     * 批量插入购物车数据
+     *
+     * @param shoppingCartList
+     */
+    void insertBatch(List<ShoppingCart> shoppingCartList);
+
+    /**
      * 根据用户id删除购物车数据
      *
      * @param userId

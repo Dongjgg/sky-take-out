@@ -27,6 +27,19 @@ public class OrderController {
     private OrderService orderService;
 
     /**
+     * 再来一单
+     *
+     * @param id
+     * @return
+     */
+    @PostMapping("/repetition/{id}")
+    @ApiOperation("再来一单")
+    public Result repetition(@PathVariable Long id) {
+        orderService.repetition(id);
+        return Result.success();
+    }
+
+    /**
      * 用户取消订单
      *
      * @return
